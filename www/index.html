@@ -23,16 +23,342 @@
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <title>SZMC</title>
+        <!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+
+        		<!-- START SITE HEADER -->
+                	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,900' rel='stylesheet' type='text/css'>
+		
+		<!-- JS -->
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
     </head>
     <body>
         <div class="app">
-            <h1>SZMC</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        
+        
+		<!-- START SITE HEADER -->
+		<header class="site-header">
+			<div class="site-logo onstart animated" data-animation="fadeInDown" data-animation-delay="1200">
+				<img src="images/logo.png" alt="" />
+			</div>
+			<!-- START NAVIGATION -->
+			<nav id="navigation" class="navigation site-nav">
+				<div class="nav-container">
+					<!-- START NAVIGATION MENU ITEMS -->
+					<ul class="onstart animated" id="menu" data-animation="fadeInDown" data-animation-delay="800">
+						<li class="active" data-menuanchor="firstPage"><a href="#firstPage" class="active">Welcome</a></li>
+						<li data-menuanchor="secondPage"><a href="#secondPage">SZMC Online</a></li>
+						<li data-menuanchor="3rdPage"><a href="#3rdPage">Synapse</a></li>
+						<li data-menuanchor="4thPage"><a href="#4thPage">File Server</a></li>
+						<li data-menuanchor="lastPage"><a href="#lastPage">Studios</a></li>
+					</ul><!-- END NAVIGATION MENU ITEMS -->
+				</div>
+			</nav>
+			<!-- END NAVIGATION -->
+		</header>
+		<!-- END SITE HEADER -->
+         		<div id="fullpage">
+							
+			<!-- HOME SECTION -->
+			<div class="section home active cover-background image-1" id="section0">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<div class="flexslider textslider onstart animated" data-animation="fadeInUp" data-animation-delay="800">
+									<ul class="slides">
+										<li>
+											<h1 class="rotate uppercase">Welcome to the <span class="font-normal">SZMC</span> Web Portal</h1>
+										</li>
+										<li>
+											<h1 class="rotate uppercase"><span class="font-normal">The Heart</span> of<br>our college's <span class="font-normal">Technology</span></h1>
+										</li>
+										<li>
+											<h1 class="rotate uppercase">Explore here <span class="font-normal">to learn<br>about our</span> services</h1>
+										</li>
+									</ul>
+								</div>
+								<p class="lead onstart animated" data-animation="fadeInUp" data-animation-delay="1000">Please browse below</p>
+								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="2">SZMC Online</a>
+								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="3">Synapse</a>
+								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="4">File Server</a>
+								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="5">Studios</a>
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>
+
+			<!-- SUBSCRIBE SECTION -->
+			<div class="section cover-background image-2" id="section1">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="section-header color-white">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">SZMC Online</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<p class="animated" data-animation="fadeInUp" data-animation-delay="200">Browse our college website, learn about our campus, get updates of news & events and even take online quizzes and lessons from our teachers.</p>
+								<a href="http://www.szmc.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Website</a>
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>
+			
+			<!-- ABOUT SECTION -->
+			<div class="section cover-background image-3" id="section2">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="section-header">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">Synapse</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p>Synapse is our campuses very own social media network hosted and functioning just like any other social network in the web. Our service is also open to others outside our campus. Our network is hosted right here in our campus, simply connected to the internet through our servers and data centers. Sign up today if you have not already.</p>
+								<div class="row">
+									<div class="col-md-6">
+										<!-- START FEATURES-LIST -->
+										<div class="features-list">
+											
+											<!-- FEATURE -->
+											<div class="feature-item">
+												<div class="feature-icon">
+													<i class="ion-ios-speedometer-outline"></i>
+												</div>
+												<div class="feature-text">
+													<h3>Fast and free</h3>
+													<p>Fastest possible speed since this is an intranet service. Explore at speeds that match file transfers</p>
+												</div>
+											</div>
+											
+											<!-- FEATURE -->
+											<div class="feature-item">
+												<div class="feature-icon">
+													<i class="ion-ios-heart-outline"></i>
+												</div>
+												<div class="feature-text">
+													<h3>You’re going to love it</h3>
+													<p>Beautifully designed with all the elements of modern networks even an online chatting system</p>
+												</div>
+											</div>
+											
+										</div><!-- END FEATURES-LIST -->
+									</div>
+									<div class="col-md-6">
+										<!-- START FEATURES-LIST -->
+										<div class="features-list">
+									
+											<!-- FEATURE -->
+											<div class="feature-item">
+												<div class="feature-icon">
+													<i class="ion-ios-albums-outline"></i>
+												</div>
+												<div class="feature-text">
+													<h3>Upload all your photos</h3>
+													<p>Easy way to share photos and videos at lighting fast speed. No more uploading wait times</p>
+												</div>
+											</div>
+											
+											<!-- FEATURE -->
+											<div class="feature-item">
+												<div class="feature-icon">
+													<i class="ion-ios-timer-outline"></i>
+												</div>
+												<div class="feature-text">
+													<h3>Huge Time Saver</h3>
+													<p>Join with your existing Facebook account with just one click. Its that easy and simple</p>
+												</div>
+											</div>
+											
+										</div><!-- END FEATURES-LIST -->
+										
+									</div>
+									<a href="http://www.synapse.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Synapse</a>
+								</div>
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>
+			
+			<!-- FEATURES SECTION -->
+			<div class="section cover-background image-4" id="section3">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="tour-header">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">File Server</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<p class="animated" data-animation="fadeInUp" data-animation-delay="400">Our state-of-the-art file server has the library of all modern media. Ranging from books of all interests, documentaries to movies, series, music and more</p>
+								
+								<a href="http://www.szmc.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open File Server</a>
+								<a href="http://www.szmc.cf" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Request file</a>
+							
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>	
+
+			<!-- FEATURES SECTION -->
+			<div class="section cover-background image-5" id="section4">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="tour-header">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">SZMC Studios</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<p class="animated" data-animation="fadeInUp" data-animation-delay="400">As a part of our campus co-curricular activities, SZMCS has initiated efforts to unleash different aspects of media and television. From photography to films, we would like to hear from you..</p>
+								
+								<a href="http://www.szmc.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open SZMCS</a>
+								<a href="http://www.szmc.cf" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Visit FB Page</a>
+							
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>
+
+			<!-- CONTACT SECTION -->
+			<div class="section cover-background image-6" id="section5">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="section-header">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">Do You Have a Question ?</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<p class="animated" data-animation="fadeInUp" data-animation-delay="400">Send us any complaints, suggestions and anything you would like to know here. Thank you for using our server</p>
+								<!-- START CONTACT FORM -->
+								<form method="post" action="send-mail.php" class="contact-form">
+									<div class="row">
+										<div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="600">
+											<input type="text" name="name" placeholder="Name" class="required">
+										</div><!-- END COLUMN 4 -->
+										<div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="700">
+											<input type="email" name="email" placeholder="Email address" class="contact-form-email required">
+										</div><!-- END COLUMN 4 -->
+										<div class="col-md-4 animated" data-animation="fadeInUp" data-animation-delay="800">
+											<input type="text" name="subject" placeholder="Subject" class="contact-form-subject">
+										</div><!-- END COLUMN 4 -->
+									</div><!-- END ROW -->
+									<textarea name="message" placeholder="Message" class="required animated" data-animation="fadeInUp" data-animation-delay="900" rows="7"></textarea>
+									<div class="response-message"></div>
+									<button class="border-button animated" data-animation="fadeInUp" data-animation-delay="1000" type="submit" id="submit" name="submit">Send Message</button>
+								</form><!-- END CONTACT FORM -->
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-30"></div>
+				</div>
+			</div>
+				
+		</div>
+		
+		<!-- START SOCIAL ICONS -->
+		<nav class="socials-icons">
+			<ul>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="800"><a href="#"><i class="ion-social-facebook"></i></a></li>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="950"><a href="#"><i class="ion-social-twitter"></i></a></li>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1100"><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1250"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1400"><a href="#"><i class="ion-social-pinterest"></i></a></li>
+				<li class="onstart animated" data-animation="fadeInRightBig" data-animation-delay="1550"><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
+			</ul> 
+		</nav>
+		<!-- END SOCIAL ICONS -->
+		
+		<!-- START VIEWPORT BORDER -->
+		<div class="viewport-border">
+			<div class="vb-l"></div>
+			<div class="vb-r"></div>
+			<div class="vb-t"></div>
+			<div class="vb-b"></div>
+		</div>
+		<!-- END VIEWPORT BORDER -->
+		
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+		<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script>
+		<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+		<script type="text/javascript" src="js/main.js"></script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
 
