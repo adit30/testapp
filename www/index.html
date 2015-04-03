@@ -39,6 +39,16 @@
 		
 		<!-- JS -->
 		<script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/PushwooshAndroid.js"></script>
+        <script type="text/javascript" src="js/PushwooshiOS.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!-- PUSH NOTIFICATIONS -->
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        
+    </body>
 
     </head>
     <body>
@@ -59,6 +69,7 @@
 						<li data-menuanchor="secondPage"><a href="#secondPage">SZMC Online</a></li>
 						<li data-menuanchor="3rdPage"><a href="#3rdPage">Synapse</a></li>
 						<li data-menuanchor="4thPage"><a href="#4thPage">File Server</a></li>
+                        <li data-menuanchor="5thPage"><a href="#5thPage">Wikipedia</a></li>
 						<li data-menuanchor="lastPage"><a href="#lastPage">Studios</a></li>
 					</ul><!-- END NAVIGATION MENU ITEMS -->
 				</div>
@@ -93,7 +104,8 @@
 								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="2">SZMC Online</a>
 								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="3">Synapse</a>
 								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="4">File Server</a>
-								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="5">Studios</a>
+								<a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="5">Wikipedia</a>
+                                <a href="#" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" data-slide="6">Studios</a>
 							</div><!-- END SLIDE CONTENT-->
 						</div>
 					</div><!-- END ROW -->
@@ -120,6 +132,9 @@
 							<div class="slide-content">
 								<p class="animated" data-animation="fadeInUp" data-animation-delay="200">Browse our college website, learn about our campus, get updates of news & events and even take online quizzes and lessons from our teachers.</p>
 								<a href="http://www.szmc.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Website</a>
+								<a href="news.html" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >News</a>
+                                <a href="events.html" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Events</a>
+
 							</div><!-- END SLIDE CONTENT-->
 						</div>
 					</div><!-- END ROW -->
@@ -204,6 +219,16 @@
 										
 									</div>
 									<a href="http://www.synapse.cf" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Synapse</a>
+                                    	<script>
+    							function openExternal(elem) {
+        						window.open(elem.href, "_system");
+        						return false; // Prevent execution of the default onClick handler 
+    							}
+								</script>
+
+								<a href="http://www.synapse.cf" onClick="javascript:return openExternal(this)" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open in Browser</a>
+                                    
+                                    
 								</div>
 							</div><!-- END SLIDE CONTENT-->
 						</div>
@@ -229,15 +254,15 @@
 							</div><!-- END SECTION HEADER -->	
 							<!-- START SLIDE CONTENT-->
 							<div class="slide-content">
-								<p class="animated" data-animation="fadeInUp" data-animation-delay="400">Our state-of-the-art file server has the library of all modern media. Ranging from books of all interests, documentaries to movies, series, music and more</p>
+							<p class="animated" data-animation="fadeInUp" data-animation-delay="400">Our state-of-the-art file server has the library of all modern media. Ranging from books of all interests, documentaries to movies, series, music and more</p>
 								
 								
 								<script>
-    function openExternal(elem) {
-        window.open(elem.href, "_system");
-        return false; // Prevent execution of the default onClick handler 
-    }
-</script>
+    							function openExternal(elem) {
+        						window.open(elem.href, "_system");
+        						return false; // Prevent execution of the default onClick handler 
+    							}
+								</script>
 
 								<a href="http://szmcserver.cf" onClick="javascript:return openExternal(this)" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open File Server</a>
 								<a href="http://synapse.cf/community/server" class="border-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Request file</a>
@@ -251,9 +276,39 @@
 					<div class="gradient-overlay background-blue-dark opacity-20"></div>
 				</div>
 			</div>	
+            
+            			<!-- Wikipedia -->
+			<div class="section cover-background image-6" id="section4">
+				<!-- START CONTAINER -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<!-- START SECTION HEADER -->
+							<div class="tour-header">
+								<!-- START TITLE -->
+								<h2 class="section-title animated" data-animation="fadeInUp">Wikipedia</h2><!-- END TITLE -->
+								<div class="line-separate line-white line-center animated" data-animation="fadeInUp" data-animation-delay="200"><span></span></div>
+							</div><!-- END SECTION HEADER -->	
+							<!-- START SLIDE CONTENT-->
+							<div class="slide-content">
+								<p class="animated" data-animation="fadeInUp" data-animation-delay="400">Learn and explore from Wikipedia, the largest encyclopedia straight from our servers here at SZMC. With an increasing library of Wiki resources, learning is faster than ever now! </p>
+								
+								<a href="http://www.wikiszmc.cf:10" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Wikipedia</a>
+								<a href="http://www.wikiszmc.cf:10" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Wikipedia Libraries</a>
+                                <a href="http://www.wikiszmc.cf:10" class="default-button bt-border-white go-slide onstart animated" data-animation="fadeInUp" data-animation-delay="1200" >Open Wiktionary</a>
+							
+							</div><!-- END SLIDE CONTENT-->
+						</div>
+					</div><!-- END ROW -->
+				</div><!-- END CONTAINER -->
+				<!-- OVERLAY -->
+				<div class="overlay">
+					<div class="gradient-overlay background-blue-dark opacity-20"></div>
+				</div>
+			</div>
 
 			<!-- FEATURES SECTION -->
-			<div class="section cover-background image-5" id="section4">
+			<div class="section cover-background image-5" id="section5">
 				<!-- START CONTAINER -->
 				<div class="container">
 					<div class="row">
@@ -280,9 +335,10 @@
 					<div class="gradient-overlay background-blue-dark opacity-20"></div>
 				</div>
 			</div>
+            
 
 			<!-- CONTACT SECTION -->
-			<div class="section cover-background image-6" id="section5">
+			<div class="section cover-background image-7" id="section6">
 				<!-- START CONTAINER -->
 				<div class="container">
 					<div class="row">
@@ -367,14 +423,5 @@
 	
 		<script type="text/javascript" src="js/main.js"></script>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
 
-        <script type="text/javascript" src="js/PushwooshAndroid.js"></script>
-        <script type="text/javascript" src="js/PushwooshiOS.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
 </html>

@@ -147,7 +147,7 @@ Version: 1.1
 		/*	FULLPAGE
 		/* ------------------------------------------------------------------------ */	
 		$('#fullpage').fullpage({
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
 			menu: '#menu',
 			scrollingSpeed: 800,
 			autoScrolling: true,

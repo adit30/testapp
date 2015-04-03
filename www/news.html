@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+	<title>SZMC News</title>
+
+	<style>
+		.rssBody ul, .rssRow {
+			margin-left: 0;
+			padding-left: 0;
+			list-style: none;
+		}
+		.rssRow h4 { margin: 0; font-size: 1.8em; letter-spacing: -1px; }
+		.rssRow h4 a { text-decoration: none; }
+		.rssRow h4 a:hover { color: darkblue; }
+		.rssRow div { font-size: 0.9em; color: #999; }
+		#zazar { color: #fff; }
+	</style>
+
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$('#test').rssfeed('http://szmc.cf/news/feed/', {
+			limit: 5
+		});
+	});
+	</script>
+
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>SZMC News</h1>
+	</div>
+
+	<div data-role="content">	
+		<div id="test"></div>
+	</div>
+	
+	<div data-role="footer">
+		
+	</div>
+	
+</div>
+
+</body>
+</html>
